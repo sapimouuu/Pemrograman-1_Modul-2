@@ -1,33 +1,33 @@
 #include<stdio.h>
 #include<math.h>
 
-float volume(float r, float t){
+float volume(float jari_jari, float tinggi){
 float v, pi=22.0/7.0;
-    v = pi*pow(r,2)*t;
+    v = pi*pow(jari_jari,2)*tinggi;
     return v;
 }
 
-float luas(float r, float t){
+float luas(float jari_jari, float tinggi){
 float l, pi=22.0/7.0;
-    l = 2*pi*r*(r+t);
+    l = 2*pi*jari_jari*(jari_jari+tinggi);
     return l;
 }
 
-float keliling(float r){
+float keliling(float jari_jari){
 float k, pi=22.0/7.0;
-    k = 2*pi*r;
+    k = 2*pi*jari_jari;
     return k;
 }
 
 int main(){
-float r, t, v, l, k;
+float jari_jari, tinggi, v, l, k;
 
-    scanf("%g", &r);
-    scanf("%g", &t);
+    scanf("%g", &jari_jari);
+    scanf("%g", &tinggi);
     
-    v = volume(r,t);
-    l = luas(r,t);
-    k = keliling(r);
+    v = volume(jari_jari, tinggi);
+    l = luas(jari_jari, tinggi);
+    k = keliling(jari_jari);
     
     printf("Volume = %.2f\n", v);
     printf("Luas = %.2f\n", l);
